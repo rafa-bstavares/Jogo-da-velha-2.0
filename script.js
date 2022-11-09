@@ -97,8 +97,8 @@ function restart(){
 }
 
 /*Eventos*/
-slots.forEach(function(){
-    addEventListener("click", clickSlot)
+slots.forEach(function(item){
+    item.addEventListener("click", clickSlot)
 })
 
 reset.addEventListener("click", restart)
